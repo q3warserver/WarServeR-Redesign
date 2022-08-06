@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
+
+body {
+  min-height: 100vh;
+  background-image: url(https://images.ctfassets.net/rporu91m20dc/4ufmwKQfbRd4vRQ5ipoDQI/f712965379a9ed60e9cff78a56365843/quake-iii-arena-hero-img?q=70&fm=webp);
+  background-position: right;
+  background-size: cover;
+  line-height: 1.6;
+  color: #efefef;
+  min-width: 320px;
+  font-size: 1.2rem;
+}
+
+p {
+  max-width: 60ch;
+}
+h1 {
+  text-align: center;
+}
+nav a,
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Source Code Pro", monospace;
+}
+
+.navbar-brand,
+.nav-link {
+  color: white;
+}
+
+.typewriter-title {
+  font-family: "Source Code Pro", monospace;
+  font-size: 2rem;
+  text-align: center;
+  color: red;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    text-align: right;
+  }
+}
+
+.home-intro {
+  max-width: 45ch;
+  border: 2px solid red;
+}
+
+.maps-container {
+  border: 3px solid red;
+  text-align: center;
+  margin: auto;
+}
+
+.maps-container p {
+  margin: auto;
+}
+.pages-hr {
+  width: 65%;
+  margin: 2rem auto;
+}
+
+/* Client info */
+
+.client-info-container {
+  margin: 2rem 5rem;
+}
+
+/* Server page styling */
+
+/* Server Card Styling */
+
+.server-list {
+  display: grid;
+  gap: 1rem;
+  padding: 0 1.5rem;
+}
+
+.server-card-wrapper {
+  background-color: #d0d0d080;
+  border: 2px solid red;
+  padding: 1rem;
+}
+
+.server-card:nth-child(2) {
+  background: red !important;
+}
+.server-card-title {
+}
+
+.server-card-description {
+}
+
+.server-card-addres {
+}
+
+.server-intro {
+  text-align: center;
+  margin: auto;
+}
