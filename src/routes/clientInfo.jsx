@@ -1,20 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "../components/Header";
-import WelcomeTypewriter from "../components/WelcomeTypewriter";
+import MyTypewriter from "../components/MyTypewriter";
 import clientSettings, {
-  CreateNewClientSetting
+	CreateNewClientSetting,
 } from "../components/client_info/clientSettings";
 import clientCommands, {
-  CreateNewCommandLi
+	CreateNewCommandLi,
 } from "../components/client_info/clientCommands";
 
-
 export default function ClientInfoPage() {
+	const [isClicked1, setisClicked1] = useState(false);
+	const [isClicked2, setisClicked2] = useState(false);
+	function HandleClick1() {
+		if (!isClicked1) {
+			setisClicked1(true);
+		} else {
+			setisClicked1(false);
+		}
+	}
+	function HandleClick2() {
+		if (!isClicked2) {
+			setisClicked2(true);
+		} else {
+			setisClicked2(false);
+		}
+	}
+
 	return (
 		<main className="app">
 			<Header />
 			<section className="client-info-wrapper">
-				<WelcomeTypewriter message="Client Info" />
+				<MyTypewriter message="Client Info" />
 				<hr className="pages-hr" />
 				<div className="client-container">
 					<h2 className="client-info-intro-title">Intro to WarServer</h2>
@@ -100,10 +116,25 @@ export default function ClientInfoPage() {
 					</ul>
 				</div>
 				<div className="client-info-settings client-container">
-					<h2 id="hidden-title" className="client-info-settings-title">
-						Client Settings
+					<h2
+						onClick={HandleClick1}
+						id="hidden-title"
+						className="client-info-settings-title">
+						Client Settings{" "}
+						<span>
+							<i
+								style={{
+									transform: isClicked1 ? "rotate(180deg)" : null,
+									animationTimingFunction: "ease-in-out",
+								}}
+								className="fa-solid fa-arrow-down"></i>
+						</span>
 					</h2>
-					<div className="client-hidden">
+					<div
+						style={{
+							display: isClicked1 ? "block" : "none",
+						}}
+						className="client-hidden">
 						<p className="client-info-settings-instructions client-content">
 							These settings are broadcast on the servers which will help
 							players configure their clients to optimize play. You can enter
@@ -113,10 +144,21 @@ export default function ClientInfoPage() {
 					</div>
 				</div>
 				<div className="client-info-steps-commands client-container">
-					<h2 className="client-info-commands-title hidden-title">
-						Client Commands
+					<h2
+						onClick={HandleClick2}
+						className="client-info-commands-title hidden-title">
+						Client Commands{" "}
+						<span>
+							<i
+								style={{ transform: isClicked2 ? "rotate(180deg)" : null }}
+								className="fa-solid fa-arrow-down"></i>
+						</span>
 					</h2>
-					<div className="client-hidden">
+					<div
+						style={{
+							display: isClicked2 ? "block" : "none",
+						}}
+						className="client-hidden">
 						<p className="client-info-commands-instructions">
 							These commands do things. Enter them in as follows:
 						</p>

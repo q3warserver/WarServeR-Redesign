@@ -1,34 +1,35 @@
 const clientCommands = [
 	{
 		key: 0,
-		description: "Callvote a map vote",
-		command: "\\callvote map “mapname” (without the quotes)",
+		description: "Provides a list of maps currently loaded on the server.",
+		command: "\\maplist",
 	},
 	{
 		key: 1,
-		description: "Test",
-		command: "\\Test",
+		description:
+			"To list additional pages of maps if supported or needed by server.",
+		command: "\\maplist 2",
 	},
 	{
 		key: 2,
-		description: "Test",
-		command: "\\Test",
+		description: "Calls a vote on the server.",
+		command:
+			"\\callvote (Example: callvote map 'mapname' (without the quotes))",
 	},
 	{
 		key: 3,
-		description: "Test",
-		command: "\\Test",
+		description: "Show the server stats.",
+		command: "\\stats",
 	},
 ];
 
 function CommandLi(props) {
-  return (
-    <li className="client-info-step">
-      <p className="client-info-steps-content">
-        {props.description}:{props.command}
-      </p>
-    </li>
-  );
+	return (
+		<li className="client-info-step">
+			<p className="client-info-steps-content">{props.description}</p>
+			<p>{props.command}</p>
+		</li>
+	);
 }
 
 function CreateNewCommandLi(command) {

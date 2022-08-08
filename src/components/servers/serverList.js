@@ -1,3 +1,5 @@
+import MyTypewriter from "../MyTypewriter";
+
 const servers = [
 	{
 		key: 0,
@@ -56,7 +58,7 @@ const servers = [
 function ServerCard(props) {
 	return (
 		<div className="server-card">
-			<h2 className="server-card-title">{props.name}</h2>
+			<MyTypewriter message={props.name} />
 			<div className="server-card-wrapper">
 				<p className="server-card-description">{props.description}</p>
 				<p className="server-card-address"></p>
