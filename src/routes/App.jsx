@@ -8,13 +8,13 @@ function App() {
 			<Header />
 			<MyTypewriter message="Welcome to WarServeR" />{" "}
 			<section className="home-intro">
-				<h2>What is WarServeR?</h2>
+				<h2 className="page-h2">What is WarServeR?</h2>
 				<p>
-					At WarServeR, we are keeping Quake 3 Arena alive for the all the
-					players that have stuck with it over the last 2 decades as well as the
-					next generation of players.
+					At WarServeR, we are keeping Quake 3 Arena alive for all the players
+					that have stuck with it over the last 2 decades as well as the next
+					generation of players.
 				</p>
-				<h3>Quake 3 Arena</h3>
+				<h3 className="page-h3">Quake 3 Arena</h3>
 				<span>
 					is the third Quake game developed by id Software and the first game to
 					prioritize multiplayer. It was a pioneer for the fps genre by

@@ -1,5 +1,7 @@
 import MyTypewriter from "../MyTypewriter";
 
+// Coding the server list since he only runs these
+
 const servers = [
 	{
 		key: 0,
@@ -24,6 +26,16 @@ const servers = [
 	},
 	{
 		key: 2,
+		name: "WarServeR CTF 2",
+		description:
+			"This second server is also running a CTF Q3A OSP MOD set to VQ3 physics settings. The maps set in the default rotations are geared for 1v1 play with a few slightly larger maps that will be triggered should more players connect.",
+		address: "Connect to: ctf.warserver.net",
+		imgSrc:
+			"https://cache.gametracker.com/server_info/ctf.warserver.net:27960/b_560_95_1.png",
+		imgLink: "https://www.gametracker.com/server_info/8.12.17.108:27960/",
+	},
+	{
+		key: 3,
 		name: "WarServeR DeFraG",
 		description:
 			"This server is running the popular Defrag MOD. Two of the most popular maps running on the server are 'XCM_TRICKS2' and 'DFWC2017-6",
@@ -34,7 +46,7 @@ const servers = [
 			"https://www.gametracker.com/server_info/defrag.warserver.net:27962/",
 	},
 	{
-		key: 3,
+		key: 4,
 		name: "WarServeR FFA",
 		description:
 			"This server is running a FFA Q3A ZMOD set to VQ3 physics settings. The maps set in the default rotations are geared for 1v1 play with a few slightly larger maps that will be triggered should more players connect.",
@@ -44,7 +56,7 @@ const servers = [
 		imgLink: "https://www.gametracker.com/server_info/ffa.warserver.net:27963/",
 	},
 	{
-		key: 4,
+		key: 5,
 		name: "WarServeR DueL",
 		description:
 			"This server is running a Duel Q3A ZMOD set to VQ3 physics settings. The maps set in the default rotation are geared for 1v1. There is a bot running around that is set to a medium skill level.",
@@ -55,13 +67,15 @@ const servers = [
 	},
 ];
 
+// Creating the Server card component
+
 function ServerCard(props) {
 	return (
 		<div className="server-card">
 			<MyTypewriter message={props.name} />
 			<div className="server-card-wrapper">
 				<p className="server-card-description">{props.description}</p>
-				<p className="server-card-address"></p>
+				<p className="server-card-address">{props.address}</p>
 				<a href={props.imgLink} rel="noreferrer" target="_blank">
 					<img className="img-fluid" src={props.imgSrc} alt="server summary" />
 				</a>

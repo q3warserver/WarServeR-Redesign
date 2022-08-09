@@ -1,3 +1,5 @@
+// Coding the client commands since these don't change
+
 const clientCommands = [
 	{
 		key: 0,
@@ -23,6 +25,8 @@ const clientCommands = [
 	},
 ];
 
+// Creating the Command list component
+
 function CommandLi(props) {
 	return (
 		<li className="client-info-step">
@@ -33,13 +37,13 @@ function CommandLi(props) {
 }
 
 function CreateNewCommandLi(command) {
-  return (
-    <CommandLi
-      key={command.key}
-      description={command.description}
-      command={command.command}
-    />
-  );
+	return (
+		<CommandLi
+			key={command.key}
+			description={command.description}
+			command={command.command}
+		/>
+	);
 }
 
 export default clientCommands;

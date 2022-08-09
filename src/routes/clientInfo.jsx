@@ -33,7 +33,9 @@ export default function ClientInfoPage() {
 				<MyTypewriter message="Client Info" />
 				<hr className="pages-hr" />
 				<div className="client-container">
-					<h2 className="client-info-intro-title">Intro to WarServer</h2>
+					<h2 className="client-info-intro-title page-h2">
+						Intro to WarServer
+					</h2>
 					<p className="client-info-intro-content">
 						WarServeR runs ZMOD, an actively developed Q3 modification that
 						incorporates many OSP features and features used by other MODs along
@@ -42,12 +44,12 @@ export default function ClientInfoPage() {
 					</p>
 				</div>
 				<div className="client-container">
-					<h2 className="client-info-steps-title">Step by Step</h2>
+					<h2 className="client-info-steps-title page-h2">Step by Step</h2>
 					<ul className="client-info-steps-list">
 						<li className="client-info-step">
 							<p className="client-info-steps-content">
-								The the first thing you want to do is download QUAKE3E. This is
-								a MODERN version of the Q3 exe file. You can download the file
+								The first thing you want to do is download QUAKE3E. This is a
+								MODERN version of the Q3 exe file. You can download the file
 								here:{" "}
 								<a
 									href="https://github.com/ec-/Quake3e/releases"
@@ -119,7 +121,7 @@ export default function ClientInfoPage() {
 					<h2
 						onClick={HandleClick1}
 						id="hidden-title"
-						className="client-info-settings-title">
+						className="client-info-settings-title page-h2">
 						Client Settings{" "}
 						<span>
 							<i
@@ -146,7 +148,7 @@ export default function ClientInfoPage() {
 				<div className="client-info-steps-commands client-container">
 					<h2
 						onClick={HandleClick2}
-						className="client-info-commands-title hidden-title">
+						className="client-info-commands-title hidden-title page-h2">
 						Client Commands{" "}
 						<span>
 							<i

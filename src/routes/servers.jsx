@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import { Parallax } from "react-parallax";
 import Header from "../components/Header";
 import MyTypewriter from "../components/MyTypewriter";
 import servers, { CreateServerCard } from "../components/servers/serverList";
+import { AnimateSharedLayout, motion } from "framer-motion";
 
 export default function ServerPage() {
+	const [selectedID, setSelectedID] = useState(null);
+
 	return (
 		<main className="app">
 			<Header />
@@ -12,9 +15,7 @@ export default function ServerPage() {
 				<MyTypewriter message="WarServeR Quake 3 Arena Servers" />
 				<hr className="pages-hr" />
 				<p className="server-intro">
-					Below are the currently running Quake 3 Arena servers. I run these
-					servers just for fun and to practice various skills required when
-					playing online.
+					Currently running Quake 3 Arena servers. Click one to learn more.
 				</p>
 				<div className="server-list">{servers.map(CreateServerCard)}</div>
 			</section>

@@ -10,7 +10,7 @@ export default function MapsPage() {
 				<MyTypewriter message="Maps" />
 				<hr className="pages-hr" />
 				<div className="maps-container">
-					<h2>Maps Info</h2>
+					<h2 className="page-h2">Maps Info</h2>
 					<p className="maps-content">
 						Each server is running an updated version of the Linux 64 bit 1.32e
 						release. The servers are set to allow downloads, redirecting clients
@@ -21,14 +21,14 @@ export default function MapsPage() {
 					</p>
 				</div>
 				<div className="maps-container">
-					<h2>Download Links</h2>
+					<h2 className="page-h2">Download Links</h2>
 					<span className="maps-content">
 						The maps running on all four servers can be downloaded manually{" "}
 						<a
 							href="http://dl.warserver.net/files/quake3/baseq3/"
 							rel="noreferrer"
 							target="_blank">
-							<MyTypewriter message="HERE" />
+							{/* <MyTypewriter message="HERE" /> */}HERE
 						</a>
 						if needed. Place these files in your “baseq3” directory.
 					</span>
