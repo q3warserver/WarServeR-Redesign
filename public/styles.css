@@ -34,8 +34,7 @@ h2,
 h3,
 h4 {
   font-family: "Source Code Pro", monospace;
-  width: max-content;
-}
+ }
 
 .page-h2, .page-h3{
   text-shadow: -4px 2px 20px gray;
@@ -106,6 +105,7 @@ h4 {
 
 @media (max-width: 768px){
 .home-intro{
+  position: unset;
   text-align: center;
   margin: 0 5rem;
 }
@@ -156,6 +156,9 @@ h4 {
   text-shadow: none;
 }
 
+.hidden-client-title{
+   width: max-content;
+}
 /* Server page styling */
 
 /* Server Card Styling */
@@ -214,4 +217,4 @@ h4 {
   .server-list{
     grid-template-columns: 1fr;
   }
-}
+  

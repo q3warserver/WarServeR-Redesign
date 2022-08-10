@@ -58,7 +58,7 @@ export default function ClientInfoPage() {
 				<div className="client-container">
 					<h2
 						onClick={HandleClick1}
-						className="client-info-steps-title page-h2">
+						className="client-info-steps-title hidden-client-title page-h2">
 						Step by Step{" "}
 						<span>
 							<i
@@ -146,8 +146,7 @@ export default function ClientInfoPage() {
 				<div className="client-info-settings client-container">
 					<h2
 						onClick={HandleClick2}
-						id="hidden-title"
-						className="client-info-settings-title page-h2">
+						className="client-info-settings-title hidden-client-title page-h2">
 						Client Settings{" "}
 						<span>
 							<i
@@ -174,7 +173,7 @@ export default function ClientInfoPage() {
 				<div className="client-info-steps-commands client-container">
 					<h2
 						onClick={HandleClick3}
-						className="client-info-commands-title hidden-title page-h2">
+						className="client-info-commands-title hidden-client-title page-h2">
 						Client Commands{" "}
 						<span>
 							<i

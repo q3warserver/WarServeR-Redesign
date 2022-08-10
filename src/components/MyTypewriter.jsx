@@ -5,7 +5,7 @@ function MyTypewriter(props) {
 	return (
 		<div className="typewriter-title">
 			<Typewriter
-				options={{ cursor: "_", delay: 85 }}
+				options={{ cursor: "_", delay: 80 }}
 				onInit={(typewriter) => {
 					typewriter.typeString(props.message).start();
 				}}

@@ -31,7 +31,7 @@ export default function MapsPage() {
 							rel="noreferrer"
 							target="_blank">
 							HERE
-						</a>
+						</a>{" "}
 						if needed. Place these files in your “baseq3” directory.
 					</span>
 				</div>

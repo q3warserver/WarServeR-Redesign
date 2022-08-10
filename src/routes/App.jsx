@@ -8,7 +8,8 @@ function App() {
 	return (
 		<main className="app">
 			<Header />
-			<MyTypewriter message="Welcome to WarServeR" />{" "}
+			<MyTypewriter message="Welcome to WarServeR" />
+			<hr className="pages-hr" />
 			<section className="home-intro">
 				<h2 className="page-h2">What is WarServeR?</h2>
 				<p>
