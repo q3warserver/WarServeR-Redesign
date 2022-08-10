@@ -159,6 +159,9 @@ h4 {
 .hidden-client-title{
    width: max-content;
 }
+.hidden-client-title:hover{
+  cursor: pointer;
+}
 /* Server page styling */
 
 /* Server Card Styling */
