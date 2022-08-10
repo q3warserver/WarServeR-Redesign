@@ -76,7 +76,11 @@ function ServerCard(props) {
 			<div className="server-card-wrapper">
 				<p className="server-card-description">{props.description}</p>
 				<p className="server-card-address">{props.address}</p>
-				<a href={props.imgLink} rel="noreferrer" target="_blank">
+				<a
+					className="server-card-img"
+					href={props.imgLink}
+					rel="noreferrer"
+					target="_blank">
 					<img className="img-fluid" src={props.imgSrc} alt="server summary" />
 				</a>
 			</div>

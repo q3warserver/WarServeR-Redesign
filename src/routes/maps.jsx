@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import Header from "../components/Header";
 import MyTypewriter from "../components/MyTypewriter";
 
+// Maps info Page
+
 export default function MapsPage() {
 	return (
 		<main className="app">
@@ -28,7 +30,7 @@ export default function MapsPage() {
 							href="http://dl.warserver.net/files/quake3/baseq3/"
 							rel="noreferrer"
 							target="_blank">
-							{/* <MyTypewriter message="HERE" /> */}HERE
+							HERE
 						</a>
 						if needed. Place these files in your “baseq3” directory.
 					</span>

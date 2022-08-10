@@ -2,6 +2,8 @@ import React from "react";
 import Header from "../components/Header";
 import MyTypewriter, { Typewriter } from "../components/MyTypewriter";
 
+// Main route you land on
+
 function App() {
 	return (
 		<main className="app">
