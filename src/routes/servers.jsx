@@ -15,7 +15,7 @@ export default function ServerPage() {
 				<MyTypewriter message="WarServeR Quake 3 Arena Servers" />
 				<hr className="pages-hr" />
 				<p className="server-intro">
-					These are the currently running Quake 3 Arena servers.
+					Please see the links below for information on our servers.
 				</p>
 				<div className="server-list">{servers.map(CreateServerCard)}</div>
 			</section>

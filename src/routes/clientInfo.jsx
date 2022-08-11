@@ -17,6 +17,8 @@ export default function ClientInfoPage() {
 	function HandleClick1() {
 		if (!isClicked1) {
 			setisClicked1(true);
+			setisClicked2(false);
+			setisClicked3(false);
 		} else {
 			setisClicked1(false);
 		}
@@ -24,6 +26,8 @@ export default function ClientInfoPage() {
 	function HandleClick2() {
 		if (!isClicked2) {
 			setisClicked2(true);
+			setisClicked3(false);
+			setisClicked1(false);
 		} else {
 			setisClicked2(false);
 		}
@@ -31,6 +35,8 @@ export default function ClientInfoPage() {
 	function HandleClick3() {
 		if (!isClicked3) {
 			setisClicked3(true);
+			setisClicked1(false);
+			setisClicked2(false);
 		} else {
 			setisClicked3(false);
 		}
@@ -88,9 +94,7 @@ export default function ClientInfoPage() {
 									64 bit OS. You only need to copy ONE of the files in the zip
 									archive (quake3e.x64.exe) to the main Quake 3 directory where
 									your game is installed. Just place that file alongside your
-									current “quake3.exe” file. You will be launching the game from
-									this file from now on. If Windows gives a warning that the
-									file is unsafe, just tell Windows to allow it.
+									current “quake3.exe” file.
 								</p>
 							</li>
 							<li className="client-info-step">

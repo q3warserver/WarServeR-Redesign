@@ -169,10 +169,10 @@ h4 {
 .server-list {
   max-width: 1700px;
   display: grid;
-  gap: 1rem;
+  gap: 1.5rem;
   margin: auto;
   padding: 0 1.5rem;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(4,1fr);
   }
 
 .server-card .Typewriter__wrapper{
@@ -208,6 +208,12 @@ h4 {
 
 .server-card-img{
   margin-top: auto;
+}
+
+.server-card-wrapper p:nth-child(3){
+  text-align: center;
+  color: red;
+  margin: auto 0
 }
 
 @media (max-width: 768px){
