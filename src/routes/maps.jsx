@@ -25,7 +25,7 @@ export default function MapsPage() {
 				<div className="maps-container">
 					<h2 className="page-h2">Download Links</h2>
 					<span className="maps-content">
-						The maps running on all four servers can be downloaded manually{" "}
+						The maps running on all servers can be downloaded manually{" "}
 						<a
 							href="http://dl.warserver.net/files/quake3/baseq3/"
 							rel="noreferrer"

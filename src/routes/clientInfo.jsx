@@ -7,40 +7,27 @@ import clientSettings, {
 import clientCommands, {
 	CreateNewCommandLi,
 } from "../components/client_info/clientCommands";
+import { motion } from "framer-motion";
+import Div1, { Div2, Div3 } from "../components/client_info/clientDivs";
 
 export default function ClientInfoPage() {
 	// Handling clicks on the different h2s for client page
 
-	const [isClicked1, setisClicked1] = useState(false);
-	const [isClicked2, setisClicked2] = useState(false);
-	const [isClicked3, setisClicked3] = useState(false);
-	function HandleClick1() {
-		if (!isClicked1) {
-			setisClicked1(true);
-			setisClicked2(false);
-			setisClicked3(false);
-		} else {
-			setisClicked1(false);
-		}
-	}
-	function HandleClick2() {
-		if (!isClicked2) {
-			setisClicked2(true);
-			setisClicked3(false);
-			setisClicked1(false);
-		} else {
-			setisClicked2(false);
-		}
-	}
-	function HandleClick3() {
-		if (!isClicked3) {
-			setisClicked3(true);
-			setisClicked1(false);
-			setisClicked2(false);
-		} else {
-			setisClicked3(false);
-		}
-	}
+	const [div1Open, setDiv1Open] = useState(false);
+	const close1 = () => setDiv1Open(false);
+	const open1 = () => {
+		setDiv1Open(true), setDiv2Open(false), setDiv3Open(false);
+	};
+	const [div2Open, setDiv2Open] = useState(false);
+	const close2 = () => setDiv2Open(false);
+	const open2 = () => {
+		setDiv2Open(true), setDiv3Open(false), setDiv1Open(false);
+	};
+	const [div3Open, setDiv3Open] = useState(false);
+	const close3 = () => setDiv3Open(false);
+	const open3 = () => {
+		setDiv3Open(true), setDiv1Open(false), setDiv2Open(false);
+	};
 
 	// Client Info Page
 
@@ -62,139 +49,49 @@ export default function ClientInfoPage() {
 					</p>
 				</div>
 				<div className="client-container">
-					<h2
-						onClick={HandleClick1}
-						className="client-info-steps-title hidden-client-title page-h2">
+					<h2 className="client-info-steps-title hidden-client-title page-h2">
 						Step by Step{" "}
-						<span>
+						<motion.button
+							whileHover={{ scale: 1.3 }}
+							whileTap={{ scale: 0.9 }}
+							onClick={() => (div1Open ? close1() : open1())}>
 							<i
-								style={{ transform: isClicked1 ? "rotate(180deg)" : null }}
+								style={{ transform: div1Open ? "rotate(180deg)" : null }}
 								className="fa-solid fa-arrow-down"></i>
-						</span>
+						</motion.button>
 					</h2>
-					<div
-						style={{
-							display: isClicked1 ? "block" : "none",
-						}}>
-						<ul className="client-info-steps-list">
-							<li className="client-info-step">
-								<p className="client-info-steps-content">
-									The first thing you want to do is download QUAKE3E. This is a
-									MODERN version of the Q3 exe file. You can download the file
-									here:{" "}
-									<a
-										href="https://github.com/ec-/Quake3e/releases"
-										rel="noreferrer"
-										target="_blank">
-										QUAKE3E
-									</a>
-									<br />
-									The file you will most likely want is the one named
-									“quake3e-windows-msvc-x86_64.zip” if you are running a Windows
-									64 bit OS. You only need to copy ONE of the files in the zip
-									archive (quake3e.x64.exe) to the main Quake 3 directory where
-									your game is installed. Just place that file alongside your
-									current “quake3.exe” file.
-								</p>
-							</li>
-							<li className="client-info-step">
-								<p className="client-info-steps-content">
-									Next, download the files below and extract them into your
-									“BASEQ3” directory.
-								</p>
-								<ul>
-									<li>
-										<p className="client-info-steps-content">
-											To take advantage of the OSP commands and features
-											supported by ZMOD, grab{" "}
-											<a
-												href="http://dl.warserver.net/files/quake3/osp/"
-												rel="noreferrer"
-												target="_blank">
-												these
-											</a>{" "}
-											files and extract them into your BASEQ3 directory.
-										</p>
-									</li>
-									<li>
-										<p className="client-info-steps-content">
-											If you plan on playing CTF you will want the{" "}
-											<a
-												href="http://dl.warserver.net/files/misc/3wave/"
-												rel="noreferrer"
-												target="_blank">
-												3wave map pak
-											</a>{" "}
-											files. Download the 3wave pk3’s via the link below and
-											extract them into your BASEQ3 directory:
-										</p>
-									</li>
-									<li>
-										<p className="client-info-steps-content">
-											If you want to run the game using HIRES textures. Download
-											the{" "}
-											<a
-												href="http://dl.warserver.net/files/misc/"
-												rel="noreferrer"
-												target="_blank">
-												HIRES texture pk3
-											</a>{" "}
-											and extract them into your BASEQ3 directory:
-										</p>
-									</li>
-								</ul>
-							</li>
-						</ul>
-					</div>
+					{div1Open && <Div1 div1Open={div1Open} handleClose={close1} />}
 				</div>
 				<div className="client-info-settings client-container">
-					<h2
-						onClick={HandleClick2}
-						className="client-info-settings-title hidden-client-title page-h2">
+					<h2 className="client-info-settings-title hidden-client-title page-h2">
 						Client Settings{" "}
-						<span>
+						<motion.button
+							whileHover={{ scale: 1.3 }}
+							whileTap={{ scale: 0.9 }}
+							onClick={() => (div2Open ? close2() : open2())}>
 							<i
 								style={{
-									transform: isClicked2 ? "rotate(180deg)" : null,
+									transform: div2Open ? "rotate(180deg)" : null,
 									animationTimingFunction: "ease-in-out",
 								}}
 								className="fa-solid fa-arrow-down"></i>
-						</span>
+						</motion.button>
 					</h2>
-					<div
-						style={{
-							display: isClicked2 ? "block" : "none",
-						}}
-						className="client-hidden">
-						<p className="client-info-settings-instructions client-content">
-							These settings are broadcast on the servers which will help
-							players configure their clients to optimize play. You can enter
-							each of these settings into the console in the game as follows:
-						</p>
-						<ul>{clientSettings.map(CreateNewClientSetting)}</ul>
-					</div>
+					{div2Open && <Div2 div2Open={div2Open} handleClose={close2} />}
 				</div>
 				<div className="client-info-steps-commands client-container">
-					<h2
-						onClick={HandleClick3}
-						className="client-info-commands-title hidden-client-title page-h2">
+					<h2 className="client-info-commands-title hidden-client-title page-h2">
 						Client Commands{" "}
-						<span>
+						<motion.button
+							whileHover={{ scale: 1.3 }}
+							whileTap={{ scale: 0.9 }}
+							onClick={() => (div3Open ? close3() : open3())}>
 							<i
-								style={{ transform: isClicked3 ? "rotate(180deg)" : null }}
+								style={{ transform: div3Open ? "rotate(180deg)" : null }}
 								className="fa-solid fa-arrow-down"></i>
-						</span>
+						</motion.button>
 					</h2>
-					<div
-						style={{
-							display: isClicked3 ? "block" : "none",
-						}}
-						className="client-hidden">
-						<p className="client-info-commands-instructions">
-							These commands do things. Enter them in as follows:
-						</p>
-						<ul>{clientCommands.map(CreateNewCommandLi)}</ul>
-					</div>
+					{div3Open && <Div3 div3Open={div3Open} handleClose={close3} />}
 				</div>
 			</section>
 		</main>
