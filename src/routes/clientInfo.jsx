@@ -54,13 +54,16 @@ export default function ClientInfoPage() {
 						<motion.button
 							whileHover={{ scale: 1.3 }}
 							whileTap={{ scale: 0.9 }}
-							onClick={() => (div1Open ? close1() : open1())}>
-							<i
-								style={{ transform: div1Open ? "rotate(180deg)" : null }}
-								className="fa-solid fa-arrow-down"></i>
+							onClick={() => (div1Open ? close1() : open1())}
+							animate={{ rotate: div1Open ? 180 : 0 }}>
+							<i class="fa-solid fa-arrow-right"></i>
 						</motion.button>
 					</h2>
-					{div1Open && <Div1 div1Open={div1Open} handleClose={close1} />}
+					<motion.div
+						animate={{ x: div1Open ? 375 : 0, opacity: div1Open ? 1 : 0 }}
+						transition={{ type: "spring", stiffness: 70, damping: 10 }}>
+						{div1Open && <Div1 div1Open={div1Open} handleClose={close1} />}
+					</motion.div>
 				</div>
 				<div className="client-info-settings client-container">
 					<h2 className="client-info-settings-title hidden-client-title page-h2">
@@ -68,16 +71,16 @@ export default function ClientInfoPage() {
 						<motion.button
 							whileHover={{ scale: 1.3 }}
 							whileTap={{ scale: 0.9 }}
-							onClick={() => (div2Open ? close2() : open2())}>
-							<i
-								style={{
-									transform: div2Open ? "rotate(180deg)" : null,
-									animationTimingFunction: "ease-in-out",
-								}}
-								className="fa-solid fa-arrow-down"></i>
+							onClick={() => (div2Open ? close2() : open2())}
+							animate={{ rotate: div2Open ? 180 : 0 }}>
+							<i className="fa-solid fa-arrow-right"></i>
 						</motion.button>
 					</h2>
-					{div2Open && <Div2 div2Open={div2Open} handleClose={close2} />}
+					<motion.div
+						animate={{ x: div2Open ? 375 : 0, opacity: div2Open ? 1 : 0 }}
+						transition={{ type: "spring", stiffness: 70, damping: 10 }}>
+						{div2Open && <Div2 div2Open={div2Open} handleClose={close2} />}
+					</motion.div>
 				</div>
 				<div className="client-info-steps-commands client-container">
 					<h2 className="client-info-commands-title hidden-client-title page-h2">
@@ -85,13 +88,16 @@ export default function ClientInfoPage() {
 						<motion.button
 							whileHover={{ scale: 1.3 }}
 							whileTap={{ scale: 0.9 }}
-							onClick={() => (div3Open ? close3() : open3())}>
-							<i
-								style={{ transform: div3Open ? "rotate(180deg)" : null }}
-								className="fa-solid fa-arrow-down"></i>
+							onClick={() => (div3Open ? close3() : open3())}
+							animate={{ rotate: div3Open ? 180 : 0 }}>
+							<i className="fa-solid fa-arrow-right"></i>
 						</motion.button>
 					</h2>
-					{div3Open && <Div3 div3Open={div3Open} handleClose={close3} />}
+					<motion.div
+						animate={{ x: div3Open ? 375 : 0, opacity: div3Open ? 1 : 0 }}
+						transition={{ type: "spring", stiffness: 70, damping: 10 }}>
+						{div3Open && <Div3 div3Open={div3Open} handleClose={close3} />}
+					</motion.div>
 				</div>
 			</section>
 		</main>
