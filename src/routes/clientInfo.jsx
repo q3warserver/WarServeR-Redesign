@@ -61,7 +61,7 @@ export default function ClientInfoPage() {
 					</h2>
 					<motion.div
 						animate={{ x: div1Open ? 375 : 0, opacity: div1Open ? 1 : 0 }}
-						transition={{ type: "spring", stiffness: 70, damping: 10 }}>
+						transition={{ type: "spring", stiffness: 150, damping: 25 }}>
 						{div1Open && <Div1 div1Open={div1Open} handleClose={close1} />}
 					</motion.div>
 				</div>
@@ -78,7 +78,7 @@ export default function ClientInfoPage() {
 					</h2>
 					<motion.div
 						animate={{ x: div2Open ? 375 : 0, opacity: div2Open ? 1 : 0 }}
-						transition={{ type: "spring", stiffness: 70, damping: 10 }}>
+						transition={{ type: "spring", stiffness: 150, damping: 25 }}>
 						{div2Open && <Div2 div2Open={div2Open} handleClose={close2} />}
 					</motion.div>
 				</div>
@@ -95,7 +95,7 @@ export default function ClientInfoPage() {
 					</h2>
 					<motion.div
 						animate={{ x: div3Open ? 375 : 0, opacity: div3Open ? 1 : 0 }}
-						transition={{ type: "spring", stiffness: 70, damping: 10 }}>
+						transition={{ type: "spring", stiffness: 150, damping: 25 }}>
 						{div3Open && <Div3 div3Open={div3Open} handleClose={close3} />}
 					</motion.div>
 				</div>
