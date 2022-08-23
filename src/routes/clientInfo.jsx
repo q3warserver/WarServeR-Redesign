@@ -37,7 +37,7 @@ export default function ClientInfoPage() {
 			<section className="client-info-wrapper">
 				<MyTypewriter message="Client Info" />
 				<hr className="pages-hr" />
-				<div className="client-container">
+				<div className="client-intro-container">
 					<h2 className="client-info-intro-title page-h2">
 						Intro to WarServer
 					</h2>
@@ -56,7 +56,7 @@ export default function ClientInfoPage() {
 							whileTap={{ scale: 0.9 }}
 							onClick={() => (div1Open ? close1() : open1())}
 							animate={{ rotate: div1Open ? 180 : 0 }}>
-							<i class="fa-solid fa-arrow-right"></i>
+							<i className="fa-solid fa-arrow-right"></i>
 						</motion.button>
 					</h2>
 					<motion.div

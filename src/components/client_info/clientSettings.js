@@ -1,5 +1,7 @@
 // Coding the client settings list since these don't change
 
+let neededFiles = "(OSP/Edawn Client Files Needed)";
+
 const clientSettings = [
 	{
 		key: 0,
@@ -27,11 +29,11 @@ const clientSettings = [
 	},
 	{
 		key: 6,
-		setting: "\\cg_enemyModel “Keel/pm”",
+		setting: "\\cg_enemyModel “Keel/pm”" + " " + neededFiles,
 	},
 	{
 		key: 7,
-		setting: "\\cg_enemyColors “iiii”",
+		setting: "\\cg_enemyColors “iiii”" + " " + neededFiles,
 	},
 ];
 

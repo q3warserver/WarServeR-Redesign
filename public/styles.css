@@ -143,6 +143,11 @@ span {
 }
 
 /* Client Info Styling*/
+
+.client-intro-container h2 {
+	margin-bottom: 2rem;
+}
+
 .client-info-wrapper a {
 	text-decoration: none;
 	font-family: "Source Code Pro", monospace;
