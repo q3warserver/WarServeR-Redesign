@@ -16,7 +16,7 @@ const clientCommands = [
 		key: 2,
 		description: "Calls a vote on the server.",
 		command:
-			"\\callvote (Example: callvote map 'mapname' (without the quotes))",
+			'\\callvote (Example: callvote map "mapname" (without the quotes))',
 	},
 	{
 		key: 3,
