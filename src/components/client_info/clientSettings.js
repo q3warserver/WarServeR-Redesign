@@ -33,10 +33,11 @@ const clientSettings = [
 	},
 	{
 		key: 7,
-		setting:
-			"\\cg_enemyColors “iiii” (Using OSP Client Files)" +
-			<br></br> +
-			"cg_enemyColors “22226” (Using pak8a.pk3)",
+		setting: "\\cg_enemyColors “iiii” (Using OSP Client Files)",
+	},
+	{
+		key: 8,
+		setting: "\\cg_enemyColors “22226” (Using pak8a.pk3)",
 	},
 ];
 
