@@ -1,6 +1,6 @@
 // Coding the client settings list since these don't change
 
-let neededFiles = "(OSP/Edawn Client Files Needed)";
+let neededFiles = "(OSP/pak8a.pk3 Client Files Needed)";
 
 const clientSettings = [
 	{
