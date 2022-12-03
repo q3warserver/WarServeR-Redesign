@@ -7,7 +7,7 @@ import clientSettings, {
 import clientCommands, {
 	CreateNewCommandLi,
 } from "../components/client_info/clientCommands";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import Div1, { Div2, Div3 } from "../components/client_info/clientDivs";
 
 export default function ClientInfoPage() {
@@ -59,10 +59,14 @@ export default function ClientInfoPage() {
 							<i className="fa-solid fa-arrow-right"></i>
 						</motion.button>
 					</h2>
+
 					<motion.div
 						animate={{ x: div1Open ? 375 : 0, opacity: div1Open ? 1 : 0 }}
-						transition={{ type: "spring", stiffness: 150, damping: 25 }}>
-						{div1Open && <Div1 div1Open={div1Open} handleClose={close1} />}
+						transition={{ type: "spring", stiffness: 150, damping: 25 }}
+						exit={{ x: div1Open ? 375 : 0, opacity: 0 }}>
+						<AnimatePresence>
+							{div1Open && <Div1 div1Open={div1Open} handleClose={close1} />}
+						</AnimatePresence>
 					</motion.div>
 				</div>
 				<div className="client-info-settings client-container">

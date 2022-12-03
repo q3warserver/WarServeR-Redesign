@@ -22,9 +22,10 @@ function Div1() {
 	return (
 		<motion.div
 			onClick={(e) => e.stopPropagation()}
-			initial="hidden"
-			animate="visible"
-			exit="exit">
+			// initial="hidden"
+			// animate="visible"
+			// exit="exit"
+		>
 			<ul className="client-info-steps-list">
 				<li className="client-info-step">
 					<p className="client-info-steps-content">
