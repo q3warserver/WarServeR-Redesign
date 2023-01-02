@@ -63,6 +63,14 @@ function Div1() {
 									these
 								</a>{" "}
 								files and extract them into your BASEQ3 directory.
+								Alternatively, you can download{" "}
+								<a
+									href="http://dl.warserver.net/files/misc/pak8a.pk3"
+									rel="noreferrer"
+									target="_blank">
+									this
+								</a>{" "}
+								file and place it in your BASEQ3 directory.
 							</p>
 						</li>
 						<li>
