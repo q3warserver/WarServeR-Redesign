@@ -55,20 +55,20 @@ function Div1() {
 						<li>
 							<p className="client-info-steps-content">
 								To take advantage of the OSP commands and features supported by
-								ZMOD, grab{" "}
+								ZMOD, grab these{" "}
 								<a
 									href="http://dl.warserver.net/files/quake3/osp/"
 									rel="noreferrer"
 									target="_blank">
-									these
+									OSP
 								</a>{" "}
 								files and extract them into your BASEQ3 directory.
-								Alternatively, you can download{" "}
+								Alternatively, you can download this{" "}
 								<a
 									href="http://dl.warserver.net/files/misc/pak8a.pk3"
 									rel="noreferrer"
 									target="_blank">
-									this
+									pak8a.pk3
 								</a>{" "}
 								file and place it in your BASEQ3 directory.
 							</p>
