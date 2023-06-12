@@ -132,7 +132,7 @@ function Div3() {
 			exit="exit"
 			className="client-hidden">
 			<p className="client-info-commands-instructions">
-				These commands do things. Enter them in as follows:
+				WarServer in game client commands. Enter them as follows:
 			</p>
 			<ul>{clientCommands.map(CreateNewCommandLi)}</ul>
 		</motion.div>

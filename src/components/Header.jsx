@@ -43,6 +43,14 @@ function Header() {
 									Servers
 								</Link>
 							</li>
+							<li className="nav-item">
+								<a
+									className="nav-link"
+									href="https://stats.warserver.net"
+									target="_blank">
+									Stats
+								</a>
+							</li>
 						</ul>
 					</div>
 				</div>
