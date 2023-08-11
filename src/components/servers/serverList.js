@@ -38,7 +38,7 @@ const servers = [
 	},
 	{
 		key: 3,
-		name: "WarServeR DueL",
+		name: "WarServeR DueL - New Jersey",
 		description:
 			"This server is running a Duel Q3A ZMOD set to VQ3 physics settings. The maps set in the default rotation are geared for 1v1. There is a bot running around that is set to a medium skill level.",
 		address: "\\connect duel.warserver.net:27964",
@@ -49,7 +49,7 @@ const servers = [
 	},
 	{
 		key: 4,
-		name: "WarServeR DueL 2",
+		name: "WarServeR DueL - Virginia",
 		description:
 			"This server is running a Duel Q3A ZMOD set to VQ3 physics settings. The maps set in the default rotation are geared for 1v1. There is a bot running around that is set to a medium skill level.",
 		address: "\\connect duel2.warserver.net:27964",
@@ -60,18 +60,7 @@ const servers = [
 	},
 	{
 		key: 5,
-		name: "WarServeR DueL 3",
-		description:
-			"This server is running a Duel Q3A ZMOD set to VQ3 physics settings. The maps set in the default rotation are geared for 1v1. There is a bot running around that is set to a medium skill level.",
-		address: "\\connect duel3.warserver.net:27961",
-		location: "(Atlanta)",
-		imgSrc:
-			"https://cache.gametracker.com/server_info/155.138.197.166:27961/b_560_95_1.png",
-		imgLink: "https://www.gametracker.com/server_info/155.138.197.166:27961/",
-	},
-	{
-		key: 6,
-		name: "WarServeR DueL 4",
+		name: "WarServeR DueL - Amsterdam",
 		description:
 			"This server is running a Duel Q3A ZMOD set to VQ3 physics settings. The maps set in the default rotation are geared for 1v1. There is a bot running around that is set to a medium skill level.",
 		address: "\\connect duel4.warserver.net:27961",
@@ -81,7 +70,7 @@ const servers = [
 		imgLink: "https://www.gametracker.com/server_info/136.244.97.162:27961/",
 	},
 	{
-		key: 7,
+		key: 6,
 		name: "WarServeR FFA",
 		description:
 			"This server is running a FFA Q3A ZMOD set to VQ3 physics settings. The maps set in the default rotations are geared for 1v1 play with a few slightly larger maps that will be triggered should more players connect.",
@@ -92,7 +81,7 @@ const servers = [
 		imgLink: "https://www.gametracker.com/server_info/ffa.warserver.net:27963/",
 	},
 	{
-		key: 8,
+		key: 7,
 		name: "WarServeR FFA 2",
 		description:
 			"This server is running a FFA Q3A ZMOD set to VQ3 physics settings. The maps set in the default rotations are geared for 1v1 play with a few slightly larger maps that will be triggered should more players connect.",
@@ -103,7 +92,7 @@ const servers = [
 		imgLink: "https://www.gametracker.com/server_info/155.138.197.166:27963/",
 	},
 	{
-		key: 9,
+		key: 8,
 		name: "WarServeR FFA 3",
 		description:
 			"This server is running a FFA Q3A ZMOD set to VQ3 physics settings. The maps set in the default rotations are geared for 1v1 play with a few slightly larger maps that will be triggered should more players connect.",
@@ -114,7 +103,7 @@ const servers = [
 		imgLink: "https://www.gametracker.com/server_info/158.101.103.219:27960/",
 	},
 	{
-		key: 10,
+		key: 9,
 		name: "WarServeR FFA 4",
 		description:
 			"This server is running a FFA Q3A ZMOD set to VQ3 physics settings. The maps set in the default rotations are geared for 1v1 play with a few slightly larger maps that will be triggered should more players connect.",
@@ -125,7 +114,7 @@ const servers = [
 		imgLink: "https://www.gametracker.com/server_info/136.244.97.162:27963/",
 	},
 	{
-		key: 11,
+		key: 10,
 		name: "WarServeR DeFraG",
 		description:
 			"This server is running the popular Defrag MOD. Two of the most popular maps running on the server are 'XCM_TRICKS2' and 'DFWC2017-6",
@@ -137,7 +126,7 @@ const servers = [
 			"https://www.gametracker.com/server_info/defrag.warserver.net:27962/",
 	},
 	{
-		key: 12,
+		key: 11,
 		name: "WarServeR Freeze",
 		description:
 			"This server is running a Freeze Q3A ZMOD set to VQ3 physics settings. The maps set in the default rotations are geared for 1v1 play with a few slightly larger maps that will be triggered should more players connect.",
@@ -148,8 +137,8 @@ const servers = [
 		imgLink: "https://www.gametracker.com/server_info/158.101.103.219:27963/",
 	},
 	{
-		key: 13,
-		name: "WarServeR InsTagib",
+		key: 12,
+		name: "WarServeR InsTagiB",
 		description:
 			"This server is running a Q3A ZMOD with slightly tweaked speed and gravity settings. Instagib is fun, but it is even more fun when it is fast paced.",
 		address: "\\connect instagib.warserver.net",
@@ -158,6 +147,17 @@ const servers = [
 			"https://cache.gametracker.com/server_info/instagib.warserver.net:27960/b_560_95_1.png",
 		imgLink:
 			"https://www.gametracker.com/server_info/instagib.warserver.net:27960/",
+	},
+	{
+		key: 13,
+		name: "WarServeR InsTagiB - EU",
+		description:
+			"This server is running a Q3A ZMOD with slightly tweaked speed and gravity settings. Instagib is fun, but it is even more fun when it is fast paced.",
+		address: "\\connect isntagib.warserver.net:27964",
+		location: "(Netherlands)",
+		imgSrc:
+			"https://cache.gametracker.com/server_info/136.244.97.162:27964/b_560_95_1.png",
+		imgLink: "https://www.gametracker.com/server_info/136.244.97.162:27964/",
 	},
 ];
 
