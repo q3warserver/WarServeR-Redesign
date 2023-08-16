@@ -155,7 +155,8 @@ const servers = [
 function ServerCard(props) {
 	return (
 		<div className="server-card">
-			<MyTypewriter message={props.name} message2={props.location} />
+			<h2 className="typewriter-title">{props.name}</h2>
+			<MyTypewriter message={props.location} />
 			<div className="server-card-wrapper">
 				<p className="server-card-description">{props.description}</p>
 				<p className="server-card-address">{props.address}</p>
