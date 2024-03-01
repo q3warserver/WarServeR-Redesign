@@ -142,7 +142,7 @@ const servers = [
 		name: "WarServeR InsTagiB",
 		description:
 			"This server is running a Q3A ZMOD with slightly tweaked speed and gravity settings. Instagib is fun, but it is even more fun when it is fast paced.",
-		address: "\\connect isntagib.warserver.net:27964",
+		address: "\\connect isntagib2.warserver.net:27964",
 		location: "Amsterdam",
 		imgSrc:
 			"https://cache.gametracker.com/server_info/136.244.97.162:27964/b_560_95_1.png",
